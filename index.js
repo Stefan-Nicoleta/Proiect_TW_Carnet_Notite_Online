@@ -11,6 +11,7 @@ let app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));  //pt a trimite filtre
 
+
 DB_init();
 
 app.use('/api', createDBRouter);
